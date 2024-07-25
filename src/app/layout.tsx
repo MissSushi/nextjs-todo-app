@@ -15,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="min-h-full grid">
+      <body className={`${inter.className} px-6 py-8 h-full`}>{children}</body>
     </html>
   );
 }
